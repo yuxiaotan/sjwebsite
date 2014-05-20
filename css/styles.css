@@ -18,8 +18,9 @@ body{
         padding-right:10px;
         float: none;
         text-align:center;
-        font-size:1.0em;
+        font-size:0.95em;
         color: #428bca;
+        width:10%;
 }
 
 .navbar-default{
