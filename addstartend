@@ -1,0 +1,2 @@
+awk '{print "<div class=\"list-group-item\">"$0"</div>"}' temp.txt > result.txt
+

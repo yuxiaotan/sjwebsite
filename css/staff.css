@@ -1,0 +1,80 @@
+.staffnamelabel{
+    margin-bottom:10px;
+}
+
+.imageSize{
+
+    width:160px;
+    height:230px;
+    overflow:hidden;
+
+}
+
+.imageSizeWide{
+
+    width:200px;
+    height:180px;
+    overflow:hidden;
+
+}
+
+
+.imageSizeDetailed{
+
+    width:210px;
+    height:290px;
+    overflow:hidden;
+
+
+}
+
+.imageSizeDetailedWide{
+
+    width:250px;
+    height:240px;
+    overflow:hidden;
+
+}
+
+.panel-heading{
+
+    font-size:1.2em;
+}
+
+.media-body{
+
+    margin-top:10px;
+    padding-left:20px;
+
+}
+
+.media-heading{
+
+    padding-bottom:15px;
+    border-bottom: 2px solid #428bca;
+    margin-bottom:10px;
+}
+
+.detailedstaffbutton{
+
+    margin-top:15px;
+}
+
+.detailedheading{
+
+    font-size:1.5em;
+}
+
+.detaileddescription{
+
+    margin-top:20px;
+    padding-top:10px;
+    padding-left:25px;
+    border-top:2px solid #eee;
+}
+
+.detailcollapsesetting{
+
+    margin-right:100px;
+
+}
