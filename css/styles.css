@@ -100,6 +100,12 @@ box-shadow: 3px 5px 20px 0px  rgba(66,139,202, 0.46);
     padding-top:60px;
     background-color:#FCFEFF;
 }
+
+.alertsetting{
+
+    text-align:center;<D-r>
+}
+
 .sidemenu{
     
     border-right:2px solid #eee;
