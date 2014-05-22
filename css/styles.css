@@ -97,8 +97,21 @@ box-shadow: 3px 5px 20px 0px  rgba(66,139,202, 0.46);
 
 .mainpage{
 
-    padding-top:60px;
+    padding-top:40px;
     background-color:#FCFEFF;
+}
+
+.mainpage > .header > .row {
+
+    padding-top:20px;
+}
+
+.englishtitle{
+
+    color:#ccc;
+    font-size:0.7em;
+    padding-top:0px;
+    margin-top:0px;
 }
 
 .alertsetting{
@@ -110,6 +123,11 @@ box-shadow: 3px 5px 20px 0px  rgba(66,139,202, 0.46);
     
     border-right:2px solid #eee;
     font-size:1.0em;
+}
+
+.sidemenu > .nav-stacked > li > a> span{
+
+    padding-bottom:6px;
 }
 
 .mainbody{
@@ -264,4 +282,19 @@ box-shadow: 3px 5px 20px 0px  rgba(66,139,202, 0.46);
 #trainingheading{
 
     margin-bottom:25;
+}
+
+/* IMPORTANT. html*/
+.importantlinks{
+
+    margin-top:20px;
+    margin-left:20px;
+    text-align:center;
+    font-size:1.2em;
+}
+
+.importantlinks > .list-group-item{
+
+    color:#428bca;
+    
 }
