@@ -1,8 +1,13 @@
-1978.11-1983.8 中国医科大学医疗系，获医学学士学位。
-1994.4-1998.3  日本佐贺大学医学部医学研究科，获医学博士学位。
-1998.4-1999.10 在日本佐贺大学医学部生物化学科从事博士后研究。
-2005.10-2007.2在美国德克萨斯大学泰勒健康研究中心从事博士后研究。
-
+1.  Hong Gao*, Xiaojing He, Mei Wu, Zhibo Zhang, Dajia Wang, Liangying Lv, Zhenwei Su, Ying Huang. Proteomic Analysis of Differentially Expressed Proteins between Stenotic and Normal Colon Segment Tissues Derived from Patients with Hirschsprung's Disease. Protein J, 2011, 30(2): 138-142. (IF=1.038) (被引用次数：1)
+2.  Hong Gao*, Rong He, Xiaojing He, Zhibo Zhang, Dajia Wang, Liangying Lv, Weilin Wang, Ying Huang. Correlating of GSTM1, GSTT1, and GSTP1 genetic polymorphisms with the risk and expressions in children with isolated Hirschsprung disease. Int J Colorectal Dis. 2010, 26(1): 117-125. (IF=2.385) (被引用次数：2)
+3.  Gao H*, Chen D, Liu X, Wu M, Mi J, Wang W. Polymorphisms and expression of the WNT8A gene in Hirschsprung's disease. Int J Mol Med. 2013, 32(3): 647-652. (IF=1.957)
+4.  Dong Chen, Jie Mi, Mei Wu, Weilin Wang, Hong Gao*. Expression of dishevelled gene in Hirschsprung’s disease. Int J Clin Exp Pathol. 2013, 6(9): 1791-1798. (IF=2.242)
+5.  Jie Mi, Dong Chen, Mei Wu, Liangying Lv, Weilin Wang, Hong Gao*. Study of effect miR-124 and target gene SOX9 in Hirschsprung's disease. Molecular Medicine Reports, 2014, 9(5): 1839-1843. (IF=1.17)
+6.  Mei Wu, Wenwen Chen, Jie Mi, Dong Chen, Weilin Wang, Hong Gao*. Expression analysis of BMP2, BMP5, BMP10 in human colon tissues from Hirschsprung disease patients. Int J Clin Exp Pathol 2014;7(2):529-536. (IF=2.242)
+7.  Hong Gao*, Xiaomei Liu, Dong Chen, Liangying Lv, Mei Wu, Jie Mi and Weilin Wang. Comparative study of Hsp27, GSK3b, Wnt1 and PRDX3 in Hirschsprung’s disease. International Journal of Experimental Pathology, 2014, 95(3): 229-237. (IF=2.04)
+8.  Dong Chen, Jie Mi, Xiaomei Liu, Juan zhang, Weilin Wang, Hong Gao*. Wnt3a gene expression is associated with isolated Hirschsprung disease polymorphism and disease status. Int J Clin Exp Pathol, 2014, 7(4): 1359-1368. (IF=2.242)
+9.  Dong Chen, Jie Mi, Donghui Fu, Weilin Wang, Hong Gao*. Expression patterns of Dishevelled-2 in different colon tissue segments of Hirschsprung's disease. Mol Med Rep, 2014 (Accepted) (IF=1.17)
+10. Weilin Wang, Zhenwei Su, Dong Chen, Jie Mi, Hong Gao*. Differential expressions of BMPR1α, ACTN4α and FABP7 in Hirschsprung disease. Int J Clin Exp Pathol, 2014, 7(5):   (IF=2.242)
 
 
 
