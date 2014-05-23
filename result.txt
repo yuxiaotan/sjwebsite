@@ -1,11 +1,7 @@
-<div class="list-group-item">2010年项目批准号：81070538利用具有不同分化特性的骨髓间充质干细胞单细胞克隆构建组织工程支架进行先天性显性脊椎裂治疗的研究</div>
-<div class="list-group-item">2011年项目批准号：81100432下丘脑PI3K-KATP信号通路异常对宫内生长受限子代外周糖代谢影响的研究</div>
-<div class="list-group-item">2011年项目批准号：81100434 FHL1基因在先天性马蹄内翻足肌肉表型形成中的作用机制研究</div>
-<div class="list-group-item">2011年项目批准号：81100807β淀粉样蛋白在七氟醚致新生鼠突触损伤及学习记忆障碍中的机制研究</div>
-<div class="list-group-item">2011年项目批准号：81170604新生大鼠高氧动物模型肠黏膜损伤机制研究</div>
-<div class="list-group-item">2012年项目批准号：81270755胚胎期miR-9和miR-124体内转染联合干细胞移植治疗显性脊椎裂的研究</div>
-<div class="list-group-item">2012年项目批准号：81200481内质网应激及下游靶基因chop参与先天性脊柱裂发病机制及在治疗中应用的研究</div>
-<div class="list-group-item">2013年项目批准号：81370716FoxA2调控KATP通道在宫内生长受限子鼠代谢综合征发生中的作用机制研究</div>
+<div class="list-group-item">1.激光扫描共聚焦显微镜</div>
+<div class="list-group-item">      激光扫描共聚焦显微镜是一种以激光为光源用计算机接收信号通过软件的运算和处理再成像的一种高精度、高清晰度的成像系统。能够轻松、清晰的对荧光标本进行图像采集及计算荧光强度；还可以完成一些如光漂白、荧光变化曲线、定时连拍、三维重建等不同需要的荧光实验。是目前比较先进的实验技术。</div>
+<div class="list-group-item">2.小动物活体成像</div>
+<div class="list-group-item">      小动物活体成像是一种及多种发光手段为一身的图像采集设备。可以实现小动物的持续气体麻醉并在该条件下进行化学发光、生物发光、X光、同位素（本实验室不允许）等发光手段的图像采集。在药代动力学、肿瘤活体移植、骨发育畸形等领域均有应用，也是近年来应用较广的一种简单、方便的实验技术。</div>
 <div class="list-group-item"></div>
 <div class="list-group-item"></div>
 <div class="list-group-item"></div>
