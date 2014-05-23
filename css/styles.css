@@ -285,6 +285,15 @@ box-shadow: 3px 5px 20px 0px  rgba(66,139,202, 0.46);
 }
 
 /* IMPORTANT. html*/
+
+.importantheader{
+
+
+    margin-top:10px;
+    margin-bottom:5px;
+    text-align:center;
+}
+
 .importantlinks{
 
     margin-top:20px;
