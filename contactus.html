@@ -9,8 +9,6 @@
 <!-- Bootstrap -->
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <link href="css/styles.css" rel="stylesheet">
-<link href="css/contactus.css" rel="stylesheet">
-
 </head>
 <body>
 <div class="container">
@@ -29,7 +27,7 @@
       <!-- Brand and toggle get grouped for better mobile display -->
       <ul class="nav navbar-nav navsetting">
         <li><a href="./home.html">首页</a></li>
-        <li><a href="./about.html">研究中心简介</a></li>
+        <li ><a href="./about.html">研究中心简介</a></li>
         <li class="navbar-default dropdown">
         <a href="./staff.html" class="dropdown-toggle">工作人员</a >
         <ul class="dropdown-menu">
@@ -186,23 +184,20 @@
     </div> <!-- Sidemenu col2 -->
 
 
-    <div class="mainbody col-md-8 formsetting">
-      <form role="form">
+    <div class="mainbody col-md-9">
+      <div class="panel panel-info">
+        <div class="panel-body">
+          <div class="jumbotron aboutjumbo">
+            <h3 class="aboutcenter">联系我们</h3>
 
-            <div class="form-group namesize" id="namecontactclass">
-              <label for="inputnamecontact">姓名</label>
-              <input type="name" class="form-control" id="inputnamecontact" placeholder="姓名"><span id="nameid"></span>
-            </div>
-            <div class="form-group namesize" id="emailcontactclass">
-              <label for="inputemailcontact">Email</label>
-              <input type="email" class="form-control" id="inputemailcontact" placeholder="信箱邮件"><span id="emailid"></span>
-            </div>
+            <div class="aboutcenter">
+            <a href="mailto:lab_center@163.com"> 邮箱：lab_center@163.com</a>
+          </div>
 
-        <div class="form-group" id="suggestioncontactclass">
-          <label for="inputcontact">建议</label>
-          <textarea class="form-control suggestionsize" rows="5" id="inputcontact" placeholder="您的想法"> </textarea><span id="suggestionid"></span>
-        <button type="button" name="Submit" id="submitButton" class="btn btn-default">Submit</button>
-      </form>
+
+          </div>        
+        </div>
+      </div> 
     </div> <!-- Mainbody Col10 -->
   </div>
 
@@ -231,157 +226,11 @@
   </div>
 </div>
 
-<div id="dialog" title="Basic dialog">
-  <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
-</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="bootstrap/js/bootstrap.min.js"></script>
-
-<script>
-
-
-$('#submitButton').click(function() {
-
-    var frm = $('#submitButton');
-    var name = $("#inputnamecontact").val();
-    var email = $("#inputemailcontact").val();
-    var suggestion = $("#inputcontact").val();
-   
-    /* Doesn't pass Name Check */
-    if(name == ""){
-
-      //highlighting name
-      document.getElementById("namecontactclass").className += " has-error has-feedback";
-      //the special little check
-      document.getElementById("nameid").className += " glyphicon glyphicon-remove form-control-feedback";
-      
-
-
-    }else
-
-    {
-   
-      //remove red highlights
-    document.getElementById("namecontactclass").className =
-   document.getElementById("namecontactclass").className.replace
-      ( /(?:^|\s)has-error(?!\S)/g , '' );
-
-    //remove x
-    document.getElementById("nameid").className =
-   document.getElementById("nameid").className.replace
-      ( /(?:^|\s)glyphicon-remove(?!\S)/g , '' );
-
-
-    //the special little check
-      document.getElementById("nameid").className += " glyphicon glyphicon-ok form-control-feedback";
-
-      //green highlights
-      document.getElementById("namecontactclass").className += " has-success";
-
-
-
-      //checking for EMAIL problems
-    if(email=="" || email==" " || (email.indexOf("@") === -1)){
-
-     //highlighting name
-      document.getElementById("emailcontactclass").className += " has-error has-feedback";
-      //the special little check
-      document.getElementById("emailid").className += " glyphicon glyphicon-remove form-control-feedback";
-
-
-    }
-   else
-   {
-
-        
-   //remove red highlights
-    document.getElementById("emailcontactclass").className =
-   document.getElementById("emailcontactclass").className.replace
-      ( /(?:^|\s)has-error(?!\S)/g , '' );
-
-    //remove x
-    document.getElementById("emailid").className =
-   document.getElementById("emailid").className.replace
-      ( /(?:^|\s)glyphicon-remove(?!\S)/g , '' );
-
-
-    //the special little check
-      document.getElementById("emailid").className += " glyphicon glyphicon-ok form-control-feedback";
-
-      //green highlights
-      document.getElementById("emailcontactclass").className += " has-success";
-
-  
-
-     if(suggestion=="" || suggestion==" "){
-//highlighting name
-      document.getElementById("suggestioncontactclass").className += " has-error has-feedback";
-      //the special little check
-      document.getElementById("suggestionid").className += " glyphicon glyphicon-remove form-control-feedback";
-     }else
-     {
-
-          //remove red highlights
-    document.getElementById("suggestioncontactclass").className =
-   document.getElementById("suggestioncontactclass").className.replace
-      ( /(?:^|\s)has-error(?!\S)/g , '' );
-
-    //remove x
-    document.getElementById("suggestionid").className =
-   document.getElementById("suggestionid").className.replace
-      ( /(?:^|\s)glyphicon-remove(?!\S)/g , '' );
-
-
-    //the special little check
-      document.getElementById("suggestionid").className += " glyphicon glyphicon-ok form-control-feedback";
-
-      //green highlights
-      document.getElementById("suggestioncontactclass").className += " has-success";
-
-
-
- console.log(suggestion);
-    $.ajax({
-type: 'POST',
-url: 'https://mandrillapp.com/api/1.0/messages/send.json',
-data: {
-"key": "X4BAACuK9ETL9ItZ9CB8bA",
-"message": {
-"from_email": email,
-"to": [
-{
-"email": "swiftdestiny28@gmail.com",
-"name": "RECIPIENT NAME (OPTIONAL)",
-"type": "to"
-},
-
-],
-"autotext": "true",
-"subject": name.concat("意见栏"),
-"html": email.concat(suggestion)
-}
-}
-}).done(function(response) {
-  console.log(response); // if you're into that sorta thing
-  console.log("aslkdfja;sjdf;ak");
-  });
-
-
-       
-     }
-   
-   }
-    } 
-
-
-});
-</script>
-
 </body>
 </html>
 
 
-
-<label for="inputemailcontact">Email </label>
