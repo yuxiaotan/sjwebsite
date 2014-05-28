@@ -1,2 +1,3 @@
- sudo cp -R ./* /Library/WebServer/Documents/
+sudo rm -r /Library/WebServer/Documents/* && 
+sudo cp -R ./* /Library/WebServer/Documents/
 
