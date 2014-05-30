@@ -98,20 +98,8 @@
 
 <script>
 
-function settinghome (){
-
-  console.log("settinghome");
-document.getElementById("home").className += " active";
-document.getElementById("home").id += " activenavbar";
-
-};
-
-$(function(settinghome){
-    var home = true;
-    $("#includedContent").load("t_topbar.html", settinghome);
-    $("body").on("change",settinghome());
-
-});
+    var x="home";
+    $("#includedContent").load("t_topbar.html");
 
 </script>
 

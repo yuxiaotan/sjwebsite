@@ -14,6 +14,7 @@
       <!-- Brand and toggle get grouped for better mobile display -->
       <ul class="nav navbar-nav navsetting">
         <li id="home"><a href="./home.html">首页</a></li>
+        <!--<li class="active navbar-default dropdown" id="home"><a href="./home.html"> 首页</a><div class="arrow-up"></div></li>-->
         <li id="about"><a href="./about.html">研究中心简介</a></li>
         <li id="staff" class="navbar-default dropdown">
         <a href="./staff.html" class="dropdown-toggle">工作人员</a >
@@ -125,3 +126,62 @@
     </div><!-- /.container-fluid -->
   </nav> 
 </div> <!-- Container for The top Menu -->    
+
+<script>
+    var home = true;
+
+    
+    if(x == "home"){
+      $('#home').addClass('active navbar-default dropdown');
+      }
+
+    if(x == "about"){
+
+      $('#about').addClass('active navbar-default dropdown');
+
+    }
+
+    if(x == "appointment"){
+
+      $('#appointment').addClass('active navbar-default dropdown');
+
+    }
+
+    if(x == "staff"){
+
+      $('#staff').addClass('active navbar-default dropdown');
+
+    }
+
+    if(x == "equipment"){
+
+      $('#equipment').addClass('active navbar-default dropdown');
+
+    }
+
+    if(x == "skillset"){
+
+      $('#skillset').addClass('active navbar-default dropdown');
+
+    }
+
+
+    if(x == "training"){
+
+      $('#training').addClass('active navbar-default dropdown');
+
+    }
+
+    if(x == "rules"){
+
+      $('#rules').addClass('active navbar-default dropdown');
+
+    }
+
+
+
+
+
+
+</script>
+
