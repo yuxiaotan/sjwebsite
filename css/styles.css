@@ -312,3 +312,14 @@ box-shadow: 3px 5px 20px 0px  rgba(66,139,202, 0.46);
 
     margin-left:10px;
 }
+
+
+/* Appointment.html */
+
+.appt-instr-tbl{
+
+    margin-top:25px;
+    text-align:center;
+    margin-left:22%;
+    margin-right:22%
+}
