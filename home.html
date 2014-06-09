@@ -4,10 +4,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="images/cloud" type="image/x-icon" />
-<title>实验研究中心</title>
+<title>实验研究中心1.1</title>
 
 <!-- Bootstrap -->
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+<link href="css/gallery/bootstrap-image-gallery.min.css" rel="stylesheet">
 <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
@@ -56,18 +58,58 @@
       </div>
 
       <div class="row">
-        <div class="col-md-5 news1 bg-success">
-          <h3>活动通告</h3>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-success" href="#" role="button">了解一下   <span class="glyphicon glyphicon-circle-arrow-right"></span></a></p>
+        <div class="col-md-8 jumboimage">
+          <div class="jumbotron homepagepic">
+            <p class="hppbutton"><a class="btn btn-success" id="image-gallery-button" href="#" role="button">精彩生活<span class="glyphicon glyphicon-circle-arrow-right"></span></a></p>
+          </div>
+
         </div>
-        <div class="col-md-6 news2 bg-warning">
+
+        <div class="col-md-3 news2 bg-warning">
           <h3>学术交流</h3>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <p><a class="btn btn-warning" href="#" role="button">了解一下！<span class="glyphicon glyphicon-chevron-right"></span></a></p>
         </div>
       </div>
+
+      <div id="blueimp-gallery" class="blueimp-gallery">
+        <!-- The container for the modal slides -->
+        <div class="slides"></div>
+        <!-- Controls for the borderless lightbox -->
+        <h3 class="title"></h3>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+        <!-- The modal dialog, which will be used to wrap the lightbox content -->
+        <div class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" aria-hidden="true">&times;</button>
+                <h4 class="modal-title"></h4>
+              </div>
+              <div class="modal-body next"></div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default pull-left prev">
+                  <i class="glyphicon glyphicon-chevron-left"></i>
+                  Previous
+                </button>
+                <button type="button" class="btn btn-primary next">
+                  Next
+                  <i class="glyphicon glyphicon-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div> <!-- Mainbody Col10 -->
+
+
+
   </div>
 
 
@@ -95,11 +137,13 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="script/csi.min.js"></script>
+<script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+<script src="script/bootstrap-image-gallery.min.js"></script>
 
 <script>
 
-    var x="home";
-    $("#includedContent").load("t_topbar.html");
+var x="home";
+$("#includedContent").load("t_topbar.html");
 
 </script>
 
