@@ -18,9 +18,76 @@
 <div id="includedContent"></div>
 
 
+
+<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery">
+  <!-- The container for the modal slides -->
+  <div class="slides"></div>
+  <!-- Controls for the borderless lightbox -->
+  <h3 class="title"></h3>
+  <a class="prev">‹</a>
+  <a class="next">›</a>
+  <a class="close">×</a>
+  <a class="play-pause"></a>
+  <ol class="indicator"></ol>
+  <!-- The modal dialog, which will be used to wrap the lightbox content -->
+  <div class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" aria-hidden="true">&times;</button>
+          <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body next"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default pull-left prev">
+            <i class="glyphicon glyphicon-chevron-left"></i>
+            Previous
+          </button>
+          <button type="button" class="btn btn-primary next">
+            Next
+            <i class="glyphicon glyphicon-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="links">
+
+  <a href="img/homepage.png" title="实验室全体照" data-gallery>
+    <img src="img/hppic/thumbnail/thmb_homepage.png" alt="实验室全体照">
+  </a>
+  <a href="img/hppic/DSC07197.JPG" title="" data-gallery>
+    <img src="img/hppic/thumbnail/thmb_DSC07197.JPG" alt="">
+  </a>
+  <a href="img/hppic/DSC07216.JPG" title="" data-gallery>
+    <img src="img/hppic/thumbnail/thmb_DSC07216.JPG" alt="">
+  </a>
+  <a href="img/hppic/DSC07218.JPG" title="" data-gallery>
+    <img src="img/hppic/thumbnail/thmb_DSC07218.JPG" alt="">
+  </a>
+  <a href="img/hppic/DSC07230.JPG" title="" data-gallery>
+    <img src="img/hppic/thumbnail/thmb_DSC07230.JPG" alt="">
+  </a>
+  <a href="img/hppic/DSC07210.JPG" title="" data-gallery>
+    <img src="img/hppic/thumbnail/thmb_DSC07210.JPG" alt="">
+  </a>
+  <a href="img/hppic/DSC07217.JPG" title="" data-gallery>
+    <img src="img/hppic/thumbnail/thmb_DSC07217.JPG" alt="">
+  </a>
+  <a href="img/hppic/DSC07221.JPG" title="" data-gallery>
+    <img src="img/hppic/thumbnail/thmb_DSC07221.JPG" alt="">
+  </a>
+  <a href="img/hppic/DSC07253.JPG" title="" data-gallery>
+    <img src="img/hppic/thumbnail/thmb_DSC07253.JPG" alt="">
+  </a>
+</div>
+
 <!-- Actual Page -->
 <div class="container mainpage">
- 
+
   <div data-include="t_bigname.html"></div>
 
 
@@ -49,7 +116,7 @@
           </div>
           <div class="col-md-7">
             <h2>简介</h2>
-              为了盛京医院科研工作的顺利进行，2007年10月实验研究中心一区在原有实验中心基础上扩建而成。作为公共实验研究平台面向全院职工及研究生开放。研究中心现有SPF级实验动物中心，细胞培养间12间，共聚焦显微镜，荧光实时定量PCR，流式细胞仪等大型仪器设备，电泳转印，低温离心机，普通PCR等常规实验设备，可以满足绝大多数实验要求。 
+            为了盛京医院科研工作的顺利进行，2007年10月实验研究中心一区在原有实验中心基础上扩建而成。作为公共实验研究平台面向全院职工及研究生开放。研究中心现有SPF级实验动物中心，细胞培养间12间，共聚焦显微镜，荧光实时定量PCR，流式细胞仪等大型仪器设备，电泳转印，低温离心机，普通PCR等常规实验设备，可以满足绝大多数实验要求。 
             <p></p>
             <p><a href="./about.html" class="btn btn-primary btn-lg" role="button">了解一下！</a></p>
           </div>
@@ -60,7 +127,10 @@
       <div class="row">
         <div class="col-md-8 jumboimage">
           <div class="jumbotron homepagepic">
-            <p class="hppbutton"><a class="btn btn-success" id="image-gallery-button" href="#" role="button">精彩生活<span class="glyphicon glyphicon-circle-arrow-right"></span></a></p>
+            <p class="hppbutton"><button id="image-gallery-button" type="button" class="btn btn-success btn-lg">
+              <i class="glyphicon glyphicon-picture"></i>
+              实验室风采 </button>
+            </p>
           </div>
 
         </div>
@@ -72,43 +142,8 @@
         </div>
       </div>
 
-      <div id="blueimp-gallery" class="blueimp-gallery">
-        <!-- The container for the modal slides -->
-        <div class="slides"></div>
-        <!-- Controls for the borderless lightbox -->
-        <h3 class="title"></h3>
-        <a class="prev">‹</a>
-        <a class="next">›</a>
-        <a class="close">×</a>
-        <a class="play-pause"></a>
-        <ol class="indicator"></ol>
-        <!-- The modal dialog, which will be used to wrap the lightbox content -->
-        <div class="modal fade">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" aria-hidden="true">&times;</button>
-                <h4 class="modal-title"></h4>
-              </div>
-              <div class="modal-body next"></div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default pull-left prev">
-                  <i class="glyphicon glyphicon-chevron-left"></i>
-                  Previous
-                </button>
-                <button type="button" class="btn btn-primary next">
-                  Next
-                  <i class="glyphicon glyphicon-chevron-right"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
     </div> <!-- Mainbody Col10 -->
-
-
 
   </div>
 
@@ -143,7 +178,22 @@
 <script>
 
 var x="home";
+var borderless="true";
 $("#includedContent").load("t_topbar.html");
+
+$('#image-gallery-button').on('click', function (event) {
+
+    if(borderless == "true"){
+
+    $('#blueimp-gallery').data('useBootstrapModal', !borderless);
+    $('#blueimp-gallery').toggleClass('blueimp-gallery-controls', borderless);
+    borderless="false";
+    }
+
+    event.preventDefault();
+    blueimp.Gallery($('#links a'), $('#blueimp-gallery').data());
+
+    });
 
 </script>
 
