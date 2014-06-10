@@ -12,10 +12,8 @@
 </head>
 <body>
 
-  
-<!-- <div data-include="t_topbar.html"></div> -->
 <div id="includedContent"></div>
-
+  
 <!-- Actual Page -->
 <div class="container mainpage">
 
@@ -45,41 +43,55 @@
 
 
     <div class="mainbody col-md-9">
-
-      <h3 class="importantheader">指导老师预约</h3>
-
-      <div class="appt-instr-tbl">
-        <table class="table table-striped">
-
-          <thead>
-            <tr>
-              <th>Name </th>
-              <th>Email </th>
-            </tr>
-          </thead>
-
-          <tbody>
-          <tr>
-            <td><a href="./staff.html#fanyang">范洋</a></td>
-            <td><a href="fanyang1973@163.com">fanyang1973@163.com</a></td> 
-          </tr>
-
-          <tr>
-            <td><a href="./staff.html#wanglili">王莉莉</a></td>
-            <td><a href="wll_1977_21@163.com">wll_1977_21@163.com</a></td>
-          </tr>
+      <ul class="nav nav-tabs nav-justified">
+        <li > <a href="./equipment.html">生物技术相关仪器</a>
 
 
-          <tr>
-            <td><a href="./staff.html#liuxiaomei">刘晓梅</a></td>
-            <td><a href="liuxm1@sj-hospital.org">liuxm1@sj-hospital.org</a></td>
-          </tr>
+
+        </li>
+        <li ><a href="./equipment2.html">动物实验相关仪器</a>
 
 
-          </tbody>
-        </table>
+
+        </li>
+        <li class="active"><a href="./equipment3.html">实验室常用仪器设备</a></li>
+      </ul>
+
+      <div class="panel panel-default eqptblstart">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#c4">
+              <h4>微量紫外/可见光分光光度计 （NanoVue)</h4>
+            </a>
+          </h4>
+        </div>
+        <div id="c4" class="panel-collapse collapse in">
+          <div class="panel-body">
+
+            <div class="eqptable">
+              <table class="table table-bordered">
+                <tbody>
+                <tr>
+                  <td class="eqprow info"><b>品牌:</b></td>
+                  <td>美国 GE</td> 
+                </tr>
+                <tr >
+                  <td class="eqprow info"><b>型号:</b></td>
+                  <td>NanoVue</td>
+                </tr>
+                </tbody> 
+              </table>
+            </div>
+
+            <div class="eqpsecondary">
+              <p>NanoVue为目前检测所需样品体积相对较低的微量紫外/可见光分光光度计，能够以移液器点样的方式快速测量核酸、蛋白的浓度。每次测量所需要的样品量仅需2至5 μl即可，直接将样品点于点样板上，无需比色杯或毛细管等附件。测量结束后，可以选择直接将样品擦去，所有步骤简单快速。</p>
+              <p>使用NanoVue的常用软件可进行波长扫描、单波长或多波长吸光度和浓度测试、动力学、标准曲线和激光度比值测试。 NanoVue还具有一系列生命科学研究用途,包括DNA和RNA浓度及纯度、寡核苷酸浓度、Tm计算、 Cy Dye浓度和多种蛋白质浓度测定。</p>
+              <p>本实验中心的NanoVue多用于DNA, RNA的浓度测定和单波长吸光度测试。</p>
+            </div>
+
+          </div>
+        </div>
       </div>
-      <div class="apptcenter"><a href="./appointmentexp.html"><h4><span class="glyphicon glyphicon-hand-right"></span>&nbsp;&nbsp;点击此处进入实验技术培训预约</h4></a></div>
     </div> <!-- Mainbody Col10 -->
   </div>
 
@@ -116,14 +128,12 @@
 
 <script>
 
-var x="appointment";
+var x="equipment";
 $("#includedContent").load("t_topbar.html");
 
 </script>
 </body>
 </html>
-
-
 
 
 

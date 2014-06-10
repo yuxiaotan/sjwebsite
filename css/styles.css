@@ -384,3 +384,56 @@ box-shadow: 3px 5px 20px 0px  rgba(66,139,202, 0.46);
 
 }
 
+/* equipment.html */
+
+.eqpanel{
+
+    margin-top:20px;
+    margin-bottom:20px;
+    width:100%;
+}
+
+.eqptable{
+
+    width:60%;
+}
+
+.eqptable > .table{
+
+    font-size:1em;
+}    
+
+.eqptblstart{
+
+    margin-top:20px;
+    margin-bottom:20px !important;
+
+}
+
+.eqptblitem{
+
+    margin-bottom:20px !important;
+
+}
+
+.eqprow{
+
+    width:15%;
+}
+
+.eqpsecondary{
+
+    border-top: 2px solid #5bc0de;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.eqpsecondary p{
+
+    text-indent:2em;
+}
+
+.eqpsecondary > .list-group-item{
+
+    border: 1px solid #5cb85c;
+}
