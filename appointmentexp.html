@@ -34,7 +34,7 @@
             信息查询</span></a></li>
         <li><a href="./downloads.html"><span class="glyphicon glyphicon-save">
             下载中心</span></a></li>
-        <li class="active"><a href="./suggestions.html"><span class="glyphicon glyphicon-inbox">
+        <li><a href="./suggestions.html"><span class="glyphicon glyphicon-inbox">
             意见栏</span></a></li>
         <li><a href="./questions.html"><span class="glyphicon glyphicon-question-sign">
             疑问解答</span></a></li>
@@ -48,7 +48,7 @@
 
 
     <div class="mainbody col-md-8 formsetting">
-      <h4 class="suggestionheader">意见栏</h4>
+      <h3 class="suggestionheader">实验技术培训预约</h3>
       
       <form role="form">
 
@@ -62,8 +62,8 @@
             </div>
 
             <div class="form-group has-feedback suggestionsize" id="suggestioncontactclass">
-              <label for="inputcontact">建议</label>
-              <textarea class="form-control" rows="5" id="inputcontact" placeholder="您的想法"></textarea><span class="glyphicon pull-left" id="suggestionid"></span>
+              <label for="inputcontact">原因或目的（可以不填）</label>
+              <textarea class="form-control" rows="5" id="inputcontact" placeholder="您需要预约培训课程的原因或目的"></textarea><span class="glyphicon pull-left" id="suggestionid"></span>
             </div>
 
 
@@ -80,7 +80,7 @@
                   <h4 class="modal-title">您的信件发送成功！</h4>
                 </div>
                 <div class="modal-body">
-                  谢谢您的建议！我们尽快给您一个回答！
+                  您的培训预约已经发出！我们尽快给您一个回答！如果您几天内没有得到回答，请注意您的Email拼写。
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
@@ -123,6 +123,7 @@
     <script src="script/csi.min.js"></script>
 <script>
 
+    var x="appointment";
     $("#includedContent").load("t_topbar.html");
 
 </script>
@@ -205,12 +206,6 @@ $('#submitButton').click(function() {
 
 
 
-        if(suggestion=="" || suggestion==" "){
-          //highlighting name
-          document.getElementById("suggestioncontactclass").className += " has-error has-feedback";
-          //the special little check
-          document.getElementById("suggestionid").className += " glyphicon glyphicon-remove form-control-feedback";
-        }else
         {
 
           //remove red highlights
@@ -251,8 +246,8 @@ data: {
 
 ],
 "autotext": "true",
-"subject": "[意见栏] ".concat(name),
-"html": suggestion
+"subject": "[实验技术培训预约] ".concat(name),
+"html": name+"要求实验技术培训预约"+"<br><br> 姓名:"+name+"<br> Email:"+email+"<br> 原因:"+suggestion 
 }
 }
 }).done(function(response) {
@@ -272,3 +267,4 @@ data: {
 
     </body>
     </html>
+
