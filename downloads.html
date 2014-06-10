@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="images/cloud" type="image/x-icon" />
+<title>实验研究中心</title>
+
+<!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+
+<div id="includedContent"></div>
+
+
+<!-- Actual Page -->
+<div class="container mainpage">
+
+  <div data-include="t_bigname.html"></div>
+
+  <div class="row">
+
+    <!--Side menu -->
+    <div class="sidemenu col-md-2">
+      <ul class="nav nav-pills nav-stacked">
+
+        <li><a href="./faq.html"><span class="glyphicon glyphicon-envelope">
+            信息查询</span></a></li>
+        <li class="active"><a href="./downloads.html"><span class="glyphicon glyphicon-save">
+            下载中心</span></a></li>
+        <li><a href="./suggestions.html"><span class="glyphicon glyphicon-inbox">
+            意见栏</span></a></li>
+        <li><a href="./questions.html"><span class="glyphicon glyphicon-question-sign">
+            疑问解答</span></a></li>
+        <li><a href="./contactus.html"><span class="glyphicon glyphicon-phone-alt">
+            联系我们</span></a></li>
+        <li ><a href="./important.html"><span class="glyphicon glyphicon-transfer">
+            重要链接</span></a></li>
+
+      </ul>
+    </div> <!-- Sidemenu col2 -->
+
+
+    <div class="mainbody col-md-8">
+      <h3 class="rulescenter">下载中心</h3>
+
+      <ul class="importantlinks list-group">
+        <a href="./downloads/RNA提取实验步骤.doc" class="list-group-item"><span class="glyphicon glyphicon-floppy-save"></span>&nbsp;&nbsp;RNA提取实验步骤.doc</a>
+      </ul>    
+    </div> <!-- Mainbody Col10 -->
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><!--Container and Mainpage-->
+
+<div id="footer">
+  <div class="container">
+    <p class="text-muted">中国医科大学附属盛京医院实验研究中心 版权所有. 2014 <span class="glyphicon glyphicon-copyright-mark"></span>  </p>
+  </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="script/csi.min.js"></script>
+<script>
+
+    $("#includedContent").load("t_topbar.html");
+
+</script>
+
+
+</body>
+</html>
+
+
+
