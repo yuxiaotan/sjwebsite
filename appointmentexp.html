@@ -51,16 +51,29 @@
       <form role="form">
 
             <div class="form-group namesize has-feedback" id="namecontactclass">
-              <label for="inputnamecontact">姓名</label>
+              <label for="inputnamecontact">姓名 <b>*</b></label>
               <input type="name" class="form-control" id="inputnamecontact" placeholder="姓名"><span class="glyphicon" id="nameid"></span>
             </div>
+
             <div class="form-group namesize has-feedback" id="emailcontactclass">
-              <label for="inputemailcontact">Email</label>
+              <label for="inputemailcontact">Email <b>*</b></label>
               <input type="email" class="form-control" id="inputemailcontact" placeholder="信箱邮件"><span id="emailid"></span>
             </div>
 
+            <div class="form-group namesize has-feedback" id="phonecontactclass">
+              <label for="inputphonecontact">电话</label>
+              <input type="phone" class="form-control" id="inputphonecontact" placeholder="电话"><span id="phoneid"></span>
+            </div>
+
+
+            <div class="form-group namesize has-feedback" id="timecontactclass">
+              <label for="inputtimecontact">希望培训时间 <b>*</b></label>
+              <input type="time" class="form-control" id="inputtimecontact" placeholder="希望培训时间"><span id="timeid"></span>
+            </div>
+
+
             <div class="form-group has-feedback suggestionsize" id="suggestioncontactclass">
-              <label for="inputcontact">原因或目的（可以不填）</label>
+              <label for="inputcontact">预约培训课程内容</label>
               <textarea class="form-control" rows="5" id="inputcontact" placeholder="您需要预约培训课程的原因或目的"></textarea><span class="glyphicon pull-left" id="suggestionid"></span>
             </div>
 
@@ -119,12 +132,12 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="script/csi.min.js"></script>
-<script>
+    <script>
 
-    var x="appointment";
-    $("#includedContent").load("t_topbar.html");
+var x="appointment";
+$("#includedContent").load("t_topbar.html");
 
-</script>
+    </script>
 
     <script>
 
@@ -136,6 +149,8 @@ $('#submitButton').click(function() {
     var frm = $('#submitButton');
     var name = $("#inputnamecontact").val();
     var email = $("#inputemailcontact").val();
+    var phone = $("#inputphonecontact").val();
+    var time = $("#inputtimecontact").val();
     var suggestion = $("#inputcontact").val();
 
     /* Doesn't pass Name Check */
@@ -203,25 +218,36 @@ $('#submitButton').click(function() {
         document.getElementById("emailcontactclass").className += " has-success";
 
 
+        //checking for TIME problems
+        if(time=="" || time==" "){
+
+          //highlighting name
+          document.getElementById("timecontactclass").className += " has-error has-feedback";
+          //the special little check
+          document.getElementById("timeid").className += " glyphicon glyphicon-remove form-control-feedback";
+
+
+        }
+        else
 
         {
 
           //remove red highlights
-          document.getElementById("suggestioncontactclass").className =
-            document.getElementById("suggestioncontactclass").className.replace
+          document.getElementById("timecontactclass").className =
+            document.getElementById("timecontactclass").className.replace
             ( /(?:^|\s)has-error(?!\S)/g , '' );
 
           //remove x
-          document.getElementById("suggestionid").className =
-            document.getElementById("suggestionid").className.replace
+          document.getElementById("timeid").className =
+            document.getElementById("timeid").className.replace
             ( /(?:^|\s)glyphicon-remove(?!\S)/g , '' );
 
 
           //the special little check
-          document.getElementById("suggestionid").className += " glyphicon glyphicon-ok form-control-feedback";
+          document.getElementById("timeid").className += " glyphicon glyphicon-ok form-control-feedback";
 
           //green highlights
-          document.getElementById("suggestioncontactclass").className += " has-success";
+          document.getElementById("timecontactclass").className += " has-success";
 
 
 
@@ -245,7 +271,7 @@ data: {
 ],
 "autotext": "true",
 "subject": "[实验技术培训预约] ".concat(name),
-"html": name+"要求实验技术培训预约"+"<br><br> 姓名:"+name+"<br> Email:"+email+"<br> 原因:"+suggestion 
+"html": name+"要求实验技术培训预约"+"<br><br> 姓名:"+name+"<br> Email:"+email+"<br><br> 希望培训时间:"+time+"<br><br> 电话:"+phone+"<br> 预约培训课程内容:"+suggestion 
 }
 }
 }).done(function(response) {
