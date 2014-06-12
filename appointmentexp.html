@@ -60,16 +60,22 @@
               <input type="email" class="form-control" id="inputemailcontact" placeholder="信箱邮件"><span id="emailid"></span>
             </div>
 
-            <div class="form-group namesize has-feedback" id="phonecontactclass">
-              <label for="inputphonecontact">电话</label>
-              <input type="phone" class="form-control" id="inputphonecontact" placeholder="电话"><span id="phoneid"></span>
-            </div>
-
-
             <div class="form-group namesize has-feedback" id="timecontactclass">
               <label for="inputtimecontact">希望培训时间 <b>*</b></label>
-              <input type="time" class="form-control" id="inputtimecontact" placeholder="希望培训时间"><span id="timeid"></span>
+              <input type="timepm" class="form-control" id="inputtimecontact" placeholder="希望培训时间"><span id="timeid"></span>
             </div>
+
+
+            <div class="form-group namesize has-feedback" id="phonecontactclass">
+              <label for="inputphonecontact">电话 <b>*</b></label>
+              <input type="phone" class="form-control" id="inputphonecontact" placeholder="189-0000-0000"><span id="phoneid"></span>
+            </div>
+
+            <div class="form-group namesize has-feedback" id="sectcontactclass">
+              <label for="inputsectcontact">科室 <b>*</b></label>
+              <input type="sect" class="form-control" id="inputsectcontact" placeholder="儿科，眼科，等等"><span id="sectid"></span>
+            </div>
+
 
 
             <div class="form-group has-feedback suggestionsize" id="suggestioncontactclass">
@@ -151,6 +157,7 @@ $('#submitButton').click(function() {
     var email = $("#inputemailcontact").val();
     var phone = $("#inputphonecontact").val();
     var time = $("#inputtimecontact").val();
+    var sect = $("#inputsectcontact").val();
     var suggestion = $("#inputcontact").val();
 
     /* Doesn't pass Name Check */
@@ -251,6 +258,73 @@ $('#submitButton').click(function() {
 
 
 
+
+       //checking for PHONE problems
+        if(phone=="" || phone==" " || phone.length < 7){
+
+          //highlighting name
+          document.getElementById("phonecontactclass").className += " has-error has-feedback";
+          //the special little check
+          document.getElementById("phoneid").className += " glyphicon glyphicon-remove form-control-feedback";
+
+
+        }
+        else{
+
+          //remove red highlights
+          document.getElementById("phonecontactclass").className =
+            document.getElementById("phonecontactclass").className.replace
+            ( /(?:^|\s)has-error(?!\S)/g , '' );
+
+          //remove x
+          document.getElementById("phoneid").className =
+            document.getElementById("phoneid").className.replace
+            ( /(?:^|\s)glyphicon-remove(?!\S)/g , '' );
+
+
+          //the special little check
+          document.getElementById("phoneid").className += " glyphicon glyphicon-ok form-control-feedback";
+
+          //green highlights
+          document.getElementById("phonecontactclass").className += " has-success";
+
+
+
+
+
+        //checking for SECT problems
+        if(sect=="" || sect==" " ){
+
+          //highlighting name
+          document.getElementById("sectcontactclass").className += " has-error has-feedback";
+          //the special little check
+          document.getElementById("sectid").className += " glyphicon glyphicon-remove form-control-feedback";
+
+
+        }else{
+
+                    //remove red highlights
+          document.getElementById("sectcontactclass").className =
+            document.getElementById("sectcontactclass").className.replace
+            ( /(?:^|\s)has-error(?!\S)/g , '' );
+
+          //remove x
+          document.getElementById("sectid").className =
+            document.getElementById("sectid").className.replace
+            ( /(?:^|\s)glyphicon-remove(?!\S)/g , '' );
+
+
+          //the special little check
+          document.getElementById("sectid").className += " glyphicon glyphicon-ok form-control-feedback";
+
+          //green highlights
+          document.getElementById("sectcontactclass").className += " has-success";
+
+
+
+
+
+
           console.log(suggestion);
           $('#submitvalidation').modal();
 
@@ -271,15 +345,16 @@ data: {
 ],
 "autotext": "true",
 "subject": "[实验技术培训预约] ".concat(name),
-"html": name+"要求实验技术培训预约"+"<br><br> 姓名:"+name+"<br> Email:"+email+"<br><br> 希望培训时间:"+time+"<br><br> 电话:"+phone+"<br> 预约培训课程内容:"+suggestion 
+"html": name+"要求实验技术培训预约"+"<br><br> 姓名:"+name+"<br><br> Email:"+email+"<br><br> 希望培训时间:"+time+"<br><br> 电话:"+phone+"<br><br> 科室:"+sect+"<br><br> 预约培训课程内容:"+suggestion 
 }
 }
 }).done(function(response) {
   console.log(response); // if you're into that sorta thing
   });
 
+}
 
-
+}
 }
 
 }
