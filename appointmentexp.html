@@ -60,12 +60,6 @@
               <input type="email" class="form-control" id="inputemailcontact" placeholder="信箱邮件"><span id="emailid"></span>
             </div>
 
-            <div class="form-group namesize has-feedback" id="timecontactclass">
-              <label for="inputtimecontact">希望培训时间 <b>*</b></label>
-              <input type="timepm" class="form-control" id="inputtimecontact" placeholder="希望培训时间"><span id="timeid"></span>
-            </div>
-
-
             <div class="form-group namesize has-feedback" id="phonecontactclass">
               <label for="inputphonecontact">电话 <b>*</b></label>
               <input type="phone" class="form-control" id="inputphonecontact" placeholder="189-0000-0000"><span id="phoneid"></span>
@@ -77,6 +71,10 @@
             </div>
 
 
+            <div class="form-group namesize has-feedback" id="timecontactclass">
+              <label for="inputtimecontact">希望培训时间 <b>*</b></label>
+              <input type="timepm" class="form-control" id="inputtimecontact" placeholder="希望培训时间"><span id="timeid"></span>
+            </div>
 
             <div class="form-group has-feedback suggestionsize" id="suggestioncontactclass">
               <label for="inputcontact">预约培训课程内容</label>
@@ -193,6 +191,9 @@ $('#submitButton').click(function() {
 
 
 
+
+
+
       //checking for EMAIL problems
       if(email=="" || email==" " || (email.indexOf("@") === -1)){
 
@@ -223,6 +224,47 @@ $('#submitButton').click(function() {
 
         //green highlights
         document.getElementById("emailcontactclass").className += " has-success";
+
+
+
+
+
+        
+
+
+       //checking for PHONE problems
+        if(phone=="" || phone==" " || phone.length < 7){
+
+          //highlighting name
+          document.getElementById("phonecontactclass").className += " has-error has-feedback";
+          //the special little check
+          document.getElementById("phoneid").className += " glyphicon glyphicon-remove form-control-feedback";
+
+
+        }
+        else{
+
+          //remove red highlights
+          document.getElementById("phonecontactclass").className =
+            document.getElementById("phonecontactclass").className.replace
+            ( /(?:^|\s)has-error(?!\S)/g , '' );
+
+          //remove x
+          document.getElementById("phoneid").className =
+            document.getElementById("phoneid").className.replace
+            ( /(?:^|\s)glyphicon-remove(?!\S)/g , '' );
+
+
+          //the special little check
+          document.getElementById("phoneid").className += " glyphicon glyphicon-ok form-control-feedback";
+
+          //green highlights
+          document.getElementById("phonecontactclass").className += " has-success";
+
+
+
+
+
 
 
         //checking for TIME problems
@@ -256,37 +298,6 @@ $('#submitButton').click(function() {
           //green highlights
           document.getElementById("timecontactclass").className += " has-success";
 
-
-
-
-       //checking for PHONE problems
-        if(phone=="" || phone==" " || phone.length < 7){
-
-          //highlighting name
-          document.getElementById("phonecontactclass").className += " has-error has-feedback";
-          //the special little check
-          document.getElementById("phoneid").className += " glyphicon glyphicon-remove form-control-feedback";
-
-
-        }
-        else{
-
-          //remove red highlights
-          document.getElementById("phonecontactclass").className =
-            document.getElementById("phonecontactclass").className.replace
-            ( /(?:^|\s)has-error(?!\S)/g , '' );
-
-          //remove x
-          document.getElementById("phoneid").className =
-            document.getElementById("phoneid").className.replace
-            ( /(?:^|\s)glyphicon-remove(?!\S)/g , '' );
-
-
-          //the special little check
-          document.getElementById("phoneid").className += " glyphicon glyphicon-ok form-control-feedback";
-
-          //green highlights
-          document.getElementById("phonecontactclass").className += " has-success";
 
 
 
@@ -325,6 +336,41 @@ $('#submitButton').click(function() {
 
 
 
+                  //checking for SUGGESTION problems
+        if(suggestion=="" || suggestion==" "){
+
+          //highlighting name
+          document.getElementById("suggestioncontactclass").className += " has-error has-feedback";
+          //the special little check
+          document.getElementById("suggestionid").className += " glyphicon glyphicon-remove form-control-feedback";
+
+
+        }
+        else
+
+        {
+
+          //remove red highlights
+          document.getElementById("suggestioncontactclass").className =
+            document.getElementById("suggestioncontactclass").className.replace
+            ( /(?:^|\s)has-error(?!\S)/g , '' );
+
+          //remove x
+          document.getElementById("suggestionid").className =
+            document.getElementById("suggestionid").className.replace
+            ( /(?:^|\s)glyphicon-remove(?!\S)/g , '' );
+
+
+          //the special little check
+          document.getElementById("suggestionid").className += " glyphicon glyphicon-ok form-control-feedback";
+
+          //green highlights
+          document.getElementById("suggestioncontactclass").className += " has-success";
+
+
+
+
+
           console.log(suggestion);
           $('#submitvalidation').modal();
 
@@ -354,7 +400,7 @@ data: {
 
 }
 
-}
+}}
 }
 
 }

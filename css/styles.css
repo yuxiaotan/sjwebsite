@@ -204,6 +204,10 @@ box-shadow: 3px 5px 20px 0px  rgba(66,139,202, 0.46);
     margin-top:200px;
 }
 
+.hppindent{
+
+    text-indent:2em;
+}
 
 
 
@@ -315,6 +319,17 @@ box-shadow: 3px 5px 20px 0px  rgba(66,139,202, 0.46);
 
 }
 
+.abouttopic{
+
+    margin-top:15px;
+    font-size:1.5em;
+    text-indent:2em;
+    color: #428bca;
+
+}
+
+.about
+
 /* TRAINING. html */
 #trainingtitle{
    
@@ -340,13 +355,13 @@ box-shadow: 3px 5px 20px 0px  rgba(66,139,202, 0.46);
 
     margin-top:20px;
     margin-left:20px;
-    text-align:center;
     font-size:1.2em;
 }
 
 .importantlinks > .list-group-item{
 
     color:#428bca;
+    padding-left:20%;
     
 }
 
