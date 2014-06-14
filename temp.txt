@@ -1,16 +1,10 @@
-CCK8.pdf
-ChIP-IT High Sensitivity Kit Manual.pdf
-Co-IP.pdf
-DNeasy-Blood--Tissue-Handbook.pdf
-mirVana™ PARIS™ Kit Protocol (PN 1556M Rev C).pdf
-Nuclear complex Co-IP.pdf
-Phosphatase Inhibitor Cocktail Data Sheet.pdf
-Protease Inhibitor Cocktail Data Sheet.pdf
-QIAGEN-Plasmid-Purification-Handbook--April-2012.pdf
-RNA提取实验步骤.doc
-RY25 Purification of cytoplasmic RNA from animal cells using the RNeasy Mini Kit.pdf
-tunel.pdf
-实验室常用试剂缓冲液配制.doc
+1、 孙坚 , 何贵金。  放射性支架持续照射犬胆管放射性损伤的动物实验研究。 
+中国实验动物学杂志,  2002,5 （12）:276—277.
+2、孙坚， 王家辉。   复方丹参对60Co-2照射小鼠淋巴细胞和巨噬细胞影响的研究  。中国实验动物学杂志，  2002，6（12）：346—348。
+3、孙坚，马祥瑞。  应用典——淀粉反应法检测餐具洗净度。 解放军预防医学杂志，
+1994，2（12）
+4、孙坚，  张作昌。 食用冰箱冷藏室卫生学调查。  中国公共卫生，  1993.增刊（9）
+
 
 
 
