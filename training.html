@@ -79,11 +79,368 @@
         </tr>
         </tbody>
       </table>
-    </div> <!-- Mainbody Col10 -->
+
+
+
+
+
+  <div id="trainingformid">
+
+      <h3 class="suggestionheader">实验研究技术培训预约</h3>
+      
+      <form role="form">
+
+            <div class="form-group namesize has-feedback" id="namecontactclass">
+              <label for="inputnamecontact">姓名 <b>*</b></label>
+              <input type="name" class="form-control" id="inputnamecontact" placeholder="姓名"><span class="glyphicon" id="nameid"></span>
+            </div>
+
+            <div class="form-group namesize has-feedback" id="emailcontactclass">
+              <label for="inputemailcontact">Email <b>*</b></label>
+              <input type="email" class="form-control" id="inputemailcontact" placeholder="信箱邮件"><span id="emailid"></span>
+            </div>
+
+            <div class="form-group namesize has-feedback" id="phonecontactclass">
+              <label for="inputphonecontact">电话 <b>*</b></label>
+              <input type="phone" class="form-control" id="inputphonecontact" placeholder="189-0000-0000"><span id="phoneid"></span>
+            </div>
+
+            <div class="form-group namesize has-feedback" id="sectcontactclass">
+              <label for="inputsectcontact">科室 <b>*</b></label>
+              <input type="sect" class="form-control" id="inputsectcontact" placeholder="儿科，眼科，等等"><span id="sectid"></span>
+            </div>
+
+
+            <div class="form-group namesize has-feedback" id="timecontactclass">
+              <label for="inputtimecontact">希望培训时间 <b>*</b></label>
+              <input type="timepm" class="form-control" id="inputtimecontact" placeholder="希望培训时间"><span id="timeid"></span>
+            </div>
+
+            <div class="form-group has-feedback suggestionsize" id="suggestioncontactclass">
+              <label for="inputcontact">预约培训课程内容</label>
+              <textarea class="form-control" rows="5" id="inputcontact" placeholder="您需要预约培训课程的原因或目的"></textarea><span class="glyphicon pull-left" id="suggestionid"></span>
+            </div>
+
+
+            <button type="button" name="Submit" id="submitButton" class="btn btn-default">提交</button>
+          </form>
+
+
+          <!-- Form Validation --> 
+          <div class="modal fade" id="submitvalidation" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">您的信件发送成功！</h4>
+                </div>
+                <div class="modal-body">
+                  您的培训预约已经发出！我们尽快给您一个回答！如果您几天内没有得到回答，请注意您的Email拼写。
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+              </div> <!-- Mainbody Col10 -->
   </div>
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+var x="appointment";
+$("#includedContent").load("t_topbar.html");
+
+    </script>
+
+    <script>
+
+
+$('#submitButton').click(function() {
+
+
+
+    var frm = $('#submitButton');
+    var name = $("#inputnamecontact").val();
+    var email = $("#inputemailcontact").val();
+    var phone = $("#inputphonecontact").val();
+    var time = $("#inputtimecontact").val();
+    var sect = $("#inputsectcontact").val();
+    var suggestion = $("#inputcontact").val();
+
+    /* Doesn't pass Name Check */
+    if(name == ""){
+
+    //highlighting name
+    document.getElementById("namecontactclass").className += " has-error has-feedback";
+    //the special little check
+    document.getElementById("nameid").className += " glyphicon glyphicon-remove form-control-feedback";
+
+
+
+    }else
+
+    {
+
+      //remove red highlights
+      document.getElementById("namecontactclass").className =
+        document.getElementById("namecontactclass").className.replace
+        ( /(?:^|\s)has-error(?!\S)/g , '' );
+
+      //remove x
+      document.getElementById("nameid").className =
+        document.getElementById("nameid").className.replace
+        ( /(?:^|\s)glyphicon-remove(?!\S)/g , '' );
+
+
+      //the special little check
+      document.getElementById("nameid").className += " glyphicon glyphicon-ok form-control-feedback";
+
+      //green highlights
+      document.getElementById("namecontactclass").className += " has-success";
+
+
+
+
+
+
+      //checking for EMAIL problems
+      if(email=="" || email==" " || (email.indexOf("@") === -1)){
+
+        //highlighting name
+        document.getElementById("emailcontactclass").className += " has-error has-feedback";
+        //the special little check
+        document.getElementById("emailid").className += " glyphicon glyphicon-remove form-control-feedback";
+
+
+      }
+      else
+      {
+
+
+        //remove red highlights
+        document.getElementById("emailcontactclass").className =
+          document.getElementById("emailcontactclass").className.replace
+          ( /(?:^|\s)has-error(?!\S)/g , '' );
+
+        //remove x
+        document.getElementById("emailid").className =
+          document.getElementById("emailid").className.replace
+          ( /(?:^|\s)glyphicon-remove(?!\S)/g , '' );
+
+
+        //the special little check
+        document.getElementById("emailid").className += " glyphicon glyphicon-ok form-control-feedback";
+
+        //green highlights
+        document.getElementById("emailcontactclass").className += " has-success";
+
+
+
+
+
+        
+
+
+       //checking for PHONE problems
+        if(phone=="" || phone==" " || phone.length < 7){
+
+          //highlighting name
+          document.getElementById("phonecontactclass").className += " has-error has-feedback";
+          //the special little check
+          document.getElementById("phoneid").className += " glyphicon glyphicon-remove form-control-feedback";
+
+
+        }
+        else{
+
+          //remove red highlights
+          document.getElementById("phonecontactclass").className =
+            document.getElementById("phonecontactclass").className.replace
+            ( /(?:^|\s)has-error(?!\S)/g , '' );
+
+          //remove x
+          document.getElementById("phoneid").className =
+            document.getElementById("phoneid").className.replace
+            ( /(?:^|\s)glyphicon-remove(?!\S)/g , '' );
+
+
+          //the special little check
+          document.getElementById("phoneid").className += " glyphicon glyphicon-ok form-control-feedback";
+
+          //green highlights
+          document.getElementById("phonecontactclass").className += " has-success";
+
+
+
+
+
+
+
+        //checking for TIME problems
+        if(time=="" || time==" "){
+
+          //highlighting name
+          document.getElementById("timecontactclass").className += " has-error has-feedback";
+          //the special little check
+          document.getElementById("timeid").className += " glyphicon glyphicon-remove form-control-feedback";
+
+
+        }
+        else
+
+        {
+
+          //remove red highlights
+          document.getElementById("timecontactclass").className =
+            document.getElementById("timecontactclass").className.replace
+            ( /(?:^|\s)has-error(?!\S)/g , '' );
+
+          //remove x
+          document.getElementById("timeid").className =
+            document.getElementById("timeid").className.replace
+            ( /(?:^|\s)glyphicon-remove(?!\S)/g , '' );
+
+
+          //the special little check
+          document.getElementById("timeid").className += " glyphicon glyphicon-ok form-control-feedback";
+
+          //green highlights
+          document.getElementById("timecontactclass").className += " has-success";
+
+
+
+
+
+
+        //checking for SECT problems
+        if(sect=="" || sect==" " ){
+
+          //highlighting name
+          document.getElementById("sectcontactclass").className += " has-error has-feedback";
+          //the special little check
+          document.getElementById("sectid").className += " glyphicon glyphicon-remove form-control-feedback";
+
+
+        }else{
+
+                    //remove red highlights
+          document.getElementById("sectcontactclass").className =
+            document.getElementById("sectcontactclass").className.replace
+            ( /(?:^|\s)has-error(?!\S)/g , '' );
+
+          //remove x
+          document.getElementById("sectid").className =
+            document.getElementById("sectid").className.replace
+            ( /(?:^|\s)glyphicon-remove(?!\S)/g , '' );
+
+
+          //the special little check
+          document.getElementById("sectid").className += " glyphicon glyphicon-ok form-control-feedback";
+
+          //green highlights
+          document.getElementById("sectcontactclass").className += " has-success";
+
+
+
+
+
+
+                  //checking for SUGGESTION problems
+        if(suggestion=="" || suggestion==" "){
+
+          //highlighting name
+          document.getElementById("suggestioncontactclass").className += " has-error has-feedback";
+          //the special little check
+          document.getElementById("suggestionid").className += " glyphicon glyphicon-remove form-control-feedback";
+
+
+        }
+        else
+
+        {
+
+          //remove red highlights
+          document.getElementById("suggestioncontactclass").className =
+            document.getElementById("suggestioncontactclass").className.replace
+            ( /(?:^|\s)has-error(?!\S)/g , '' );
+
+          //remove x
+          document.getElementById("suggestionid").className =
+            document.getElementById("suggestionid").className.replace
+            ( /(?:^|\s)glyphicon-remove(?!\S)/g , '' );
+
+
+          //the special little check
+          document.getElementById("suggestionid").className += " glyphicon glyphicon-ok form-control-feedback";
+
+          //green highlights
+          document.getElementById("suggestioncontactclass").className += " has-success";
+
+
+
+
+
+          console.log(suggestion);
+          $('#submitvalidation').modal();
+
+          $.ajax({
+type: 'POST',
+url: 'https://mandrillapp.com/api/1.0/messages/send.json',
+data: {
+"key": "J5M1v1vJ5MsIQANiEkHeww",
+"message": {
+"from_email": "sjwebemail@gmail.com",
+"to": [
+{
+"email": "lab_center@163.com",
+"name": "RECIPIENT NAME (OPTIONAL)",
+"type": "to"
+},
+
+],
+"autotext": "true",
+"subject": "[实验技术培训预约] ".concat(name),
+"html": name+"要求实验技术培训预约"+"<br><br> 姓名:"+name+"<br><br> Email:"+email+"<br><br> 希望培训时间:"+time+"<br><br> 电话:"+phone+"<br><br> 科室:"+sect+"<br><br> 预约培训课程内容:"+suggestion 
+}
+}
+}).done(function(response) {
+  console.log(response); // if you're into that sorta thing
+  });
+
+}
+
+}}
+}
+
+}
+} 
+
+
+});
+    </script>
+
+
+  </div>
+  <!-- END FORM -->
 
 
 
