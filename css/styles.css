@@ -243,7 +243,7 @@ box-shadow: 3px 5px 20px 0px  rgba(66,139,202, 0.46);
     display: block;
 }
 
-.dropdown-submenu>a:after {
+#ttbarspec>a:after {
     display: block;
     content: " ";
     float: right;
@@ -253,6 +253,17 @@ box-shadow: 3px 5px 20px 0px  rgba(66,139,202, 0.46);
     border-style: solid;
     border-width: 5px 0 5px 5px;
     border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenulong>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border: none;
     margin-top: 5px;
     margin-right: -10px;
 }
@@ -328,7 +339,6 @@ box-shadow: 3px 5px 20px 0px  rgba(66,139,202, 0.46);
 
 }
 
-.about
 
 /* TRAINING. html */
 #trainingtitle{
@@ -424,6 +434,11 @@ box-shadow: 3px 5px 20px 0px  rgba(66,139,202, 0.46);
     color:red; 
 }
 
+.apptblue{
+
+    color:blue;
+}
+
 /* Rules.html */
 
 .rulescenter{
@@ -453,15 +468,44 @@ box-shadow: 3px 5px 20px 0px  rgba(66,139,202, 0.46);
     width:100%;
 }
 
+.eqp2panel{
+
+    margin-top:40px;
+    margin-bottom:20px;
+    margin-left:10px;
+    margin-right:10px; 
+}
+
 .eqptable{
 
     width:60%;
 }
 
+.eqp2table{
+
+    font-size:0.97em;
+}
+
+.eqp2table > thead > tr >th{
+
+    min-width:110px;
+}
+
+.eqptablelong{
+
+    width:85%;
+}
+
 .eqptable > .table{
 
     font-size:1em;
+} 
+
+.eqptablelong > .table{
+
+    font-size:1em;
 }    
+
 
 .eqptblstart{
 
@@ -496,4 +540,13 @@ box-shadow: 3px 5px 20px 0px  rgba(66,139,202, 0.46);
 .eqpsecondary > .list-group-item{
 
     border: 1px solid #5cb85c;
+}
+
+a.eqpanchor{
+    display: block; position: relative; top: -250px; visibility: hidden;
+}
+
+.eqp2center{
+
+    text-align:center;
 }
