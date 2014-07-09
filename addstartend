@@ -1,2 +1,3 @@
 awk '{print "<div class=\"list-group-item\">"$0"</div>"}' temp.txt > result.txt
+awk '{print "<td>"$0"</td>"}' temp.txt > result.txt
 

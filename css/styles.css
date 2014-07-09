@@ -471,7 +471,7 @@ box-shadow: 3px 5px 20px 0px  rgba(66,139,202, 0.46);
 .eqp2panel{
 
     margin-top:40px;
-    margin-bottom:20px;
+    margin-bottom:40px;
     margin-left:10px;
     margin-right:10px; 
 }
@@ -479,6 +479,7 @@ box-shadow: 3px 5px 20px 0px  rgba(66,139,202, 0.46);
 .eqptable{
 
     width:60%;
+    margin-bottom:30px;
 }
 
 .eqp2table{
